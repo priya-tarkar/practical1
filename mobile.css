@@ -1,0 +1,12 @@
+.home .h1{
+    font-size: 30px;
+
+}
+.home p{
+    font-size: 20px;
+}
+.client .logo{
+    display: flex;
+    flex-direction: column;
+
+}

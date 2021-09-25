@@ -1,0 +1,336 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    height: 60px;
+    position: relative;
+}
+#logo{
+   
+    
+    padding: 5px 10px;
+}
+.navbar img{
+    height: 70px;
+    filter:brightness(300%)
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    height: 80px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+.navbar li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+    
+}
+#home{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center; 
+    height: 200px; 
+}
+.head{
+    margin-top: 150px;
+}
+#home h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#home p{
+    color: white;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+#home .btn{
+    display:block;
+    
+    font-size: 20px;
+    color: white;
+    padding: 10px 15px;
+    background-color: rgba(255, 233, 199, 0.836);
+    margin: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+#home::before{
+    content: "";
+    background: url("https://img.freepik.com/free-photo/junk-food-black-slate-with-copy-space_23-2148273109.jpg?size=626&ext=jpg") no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+.services .heading{
+    margin-top: 240px;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.services .box{
+    border: 2px solid red;
+    width: 400px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 182, 193, 0.177);
+    
+}
+.services .box img{
+   border-radius: 5px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+.services .box h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.services .container{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.services .box p{
+    text-align: justify;
+}
+.client{
+    margin-top: 30px;
+}
+.client h1{
+    display: block;
+    margin-top: auto;
+    text-align: center;
+    font-size: 40px;
+}
+.client .logo img{
+    height: 100px;
+    margin-right: 30px;
+}
+.client .logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.contact
+{
+    margin-top: 30px;
+}
+.contact .form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+}
+.contact .form input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+}
+.contact .buttons{
+    display: block;
+    margin: auto;
+    text-align: center;
+    
+    margin-top: 1px;
+    
+}
+.contact #insert{
+
+    
+    padding: 10px 10px;
+    font-size: 18px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact #insert:hover
+{
+    background: rgba(236, 104, 170, 0.216);
+}
+.contact #read{
+    
+    
+    padding: 7px 7px;
+    font-size: 18px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact #read:hover
+{
+    background-color: lightyellow;
+}
+.contact #update{
+    
+    
+    padding: 7px 7px;
+    font-size: 18px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.contact #update:hover{
+    background-color: rgba(126, 198, 226, 0.249);
+}
+.contact #delete{
+    
+    
+    padding: 7px 7px;
+    font-size: 18px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.contact #delete:hover{
+    background-color: rgba(255, 160, 122, 0.225);
+}
+.contact .bg{
+    background: url("https://techcommunity.microsoft.com/t5/image/serverpage/image-id/219953iA99CF747EABA7ADB/image-size/medium?v=v2&px=400") no-repeat center center/cover;
+    z-index: -2;
+    
+
+}
+
+@media (min-width:847px) and (max-width:1076px)
+{
+    .home .h1{
+        font-size: 30px;
+    
+    }
+    .home p{
+        font-size: 20px;
+    }
+    .client .logo{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .client .logo h1{
+        margin-bottom: 10px;
+    }
+    .client .logo img{
+        margin-bottom: 10px;
+    }
+    .services .container #box-3{
+        margin-top: 50px;
+        border: 2px solid blue;
+    }
+}
+@media  screen and (max-width:849px)
+{
+    
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navbar #logo img{
+        margin-top: 50px;
+        height: 80px;
+    }
+    .navbar::before{
+        content: "";
+        background-color: black;
+        height: 100px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .navbar ul{
+        top: 0%;
+        margin-top:0px;
+        padding: 0%;
+    }
+    .navbar ul li a{
+        font-size: 30px;
+    }
+    
+   
+
+    .services .container .box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 20px;
+        
+    }
+    .services .container p{
+        font-size: 20px;
+    }
+    .client .logo{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .client .logo h1{
+        margin-bottom: 10px;
+    }
+    .client .logo img{
+        margin-bottom: 10px;
+    }
+    #home .h{
+        font-size: 40px;
+        color: pink;
+        margin-top: 30px
+    }
+    #home p{
+        text-align: center;
+    }
+}
