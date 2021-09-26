@@ -269,7 +269,7 @@
         border: 2px solid blue;
     }
 }
-@media  screen and (max-width:849px)
+@media  (min-width:610px) and (max-width:849px)
 {
     
     .navbar{
@@ -332,5 +332,141 @@
     }
     #home p{
         text-align: center;
+    }
+}
+@media screen and (max-width:610px)
+{
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navbar #logo img{
+        margin-top: 50px;
+        height: 50px;
+    }
+    .navbar::before{
+        content: "";
+        background-color: black;
+        height: 100px;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .navbar ul{
+        top: 0%;
+        margin-top:0px;
+        padding: 0%;
+    }
+    .navbar ul li a{
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+    
+   
+
+    .services .container .box{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 20px;
+        
+    }
+    .services .container p{
+        font-size: 15px;
+    }
+    .client .logo{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+    .client .logo h1{
+        margin-bottom: 10px;
+    }
+    .client .logo img{
+        margin-bottom: 10px;
+    }
+    #home .h{
+        font-size: 20px;
+        color: pink;
+        margin-top: 5px
+    }
+    #home p{
+        text-align: center;
+        font-size: 10px;
+    }
+    .contact .form input{
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .contact #insert{
+
+    
+        padding: 7px 7px;
+        font-size: 13px;
+        margin: 3px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact #insert:hover
+    {
+        background: rgba(236, 104, 170, 0.216);
+    }
+    .contact #read{
+        
+        
+        padding: 7px 7px;
+        font-size: 13px;
+        margin: 3px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact #read:hover
+    {
+        background-color: lightyellow;
+    }
+    .contact #update{
+        
+        
+        padding: 7px 7px;
+        font-size: 13px;
+        margin: 3px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    .contact #update:hover{
+        background-color: rgba(126, 198, 226, 0.249);
+    }
+    .contact #delete{
+        
+        
+        padding: 7px 7px;
+        font-size: 13px;
+        margin: 3px 3px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    .contact #delete:hover{
+        background-color: rgba(255, 160, 122, 0.225);
+    }
+    #home .btn{
+        display:block;
+        
+        font-size: 15px;
+        color: white;
+        padding: 8px 8px;
+        background-color: rgba(255, 233, 199, 0.836);
+        margin: auto;
+        cursor: pointer;
+        margin-top: 15px;
+        border-radius: 10px;
+    
     }
 }
